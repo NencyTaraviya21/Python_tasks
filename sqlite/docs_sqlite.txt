@@ -1,0 +1,17 @@
+sqlite --> SQLite is a lightweight, fast and embedded SQL database engine.
+       --> it doesn’t require a separate server process like other relational database management systems (RDBMS) like MySQL or PostgreSQL. 
+
+
+Features of SQlite:-
+
+1. Serverless--> it means it depends on the 3rd party cloud provider for server infrastructure and IT components
+             --> doesn’t require any type of servers to be made.
+             --> Has client/server architecture
+
+2. Self contained--> which means it doesn't require any external dependencies, work can be done with single file/library
+
+3. Zero configuration--> it means there is no server process that needs to be started, stopped, or configured 
+
+4. Transactional--> manage and record interactions or transactions, ensuring data integrity and consistency
+
+5. Single database--> Including sturcture and data everything stored in single file.
