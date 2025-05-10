@@ -1,0 +1,49 @@
+1. Command Prompt---
+
+~A Command Prompt is basically a Command Line Interface.
+~It is a file with the extension .exe in which we give commands and it works accordingly.
+
+2. AI Prompt---
+
+~AI Prompts are inputs or queries that the user gives to an LLM AI Model, in order to get a specific response from the model
+
+3. Working of command on computer---
+
+~It's interpreted by shell and shell transfer it to kernel understanding language which later gives the output.
+
+--> Use of commands:-
+    -File management : using 'ls and cp', ls for displaying all files in a folder.
+                                        cp for copying file1 into file2.
+
+    -System Administration: 'ifconfig' shows the details of the network interface, 'ps' lists running processes.
+
+4.  Internal Command---
+
+~These commands are part of the operating system and reside within COMMAND.COM or cmd.exe
+~Part of shell, don't require independent files.
+
+5. Administrative command---
+    
+~Helps you to make changes in system directly.
+
+-->'color' command: use to change the text color. [color colorcode]
+-->'title' command: use to change the title name. [title titlename]
+-->'prompt' command: use to change the prompt name. [prompt promptname]
+-->'systeminfo' command: use to know the details of system [systeminfo]
+-->'time' command: use to set time. [time]
+-->'slmgr -dli' command: use to check the liscence of the comp. [slmgr -dli]
+-->'winver' command: use to check the version of the comp. [winver] or just [ver]
+-->'sfc': use to scan, verify system files.
+
+6. Basic commands---
+
+->'type nul>' = use to create new file [type nul>filename]
+->'echo' = use to show msg in cmd [echo msg]
+->'echo msg >' = use to write msg in any file [echo msg > filename.ext]
+->'tree' = use to get file folders in tree format
+->'start' = use to start any google website
+->'firewall.cpl' = use to open firewall control panel
+->'desk.cpl' = use to open desktop settings panel
+->'tasklist' = use to show tasks running in bg
+->'taskkill /pid pidnumber' = use to stop running task.
+->'mstsc' = to open remote comp. panel
