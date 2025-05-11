@@ -1,0 +1,136 @@
+--git commnads to create project, make changes and share changes with other--
+
+~ to get list of commands --> 
+$ git help log
+
+~ to see history of project -->
+$ git log
+
+~ to introduce yourself to Git with your name and public email address --> 
+$ git config --global user.name "Your Name Comes Here"
+$ git config --global user.email you@yourdomain.example.com
+
+~ List All Settings -->
+git config --list
+
+~ have a tarball (an archiving file) --> 
+$ tar xzf project.tar.gz
+$ cd project
+$ git init
+
+~ to add something to git in current directory -->
+$ git add .
+
+~ by adding it stores temp. to store it permanently -->
+$ git commit
+
+~ after modifying files to add that content -->
+$ git add file1 file2 
+
+~ see what is about to be committed -->
+$ git diff --cached
+only '$ git diff' will show initially added data.
+
+~ see brief summary using -->
+$ git status
+
+~ Alternative of '$ git add' -->
+$ git commit -a
+
+~ want to see complete diffs at each step -->
+$ git log -p
+
+--branch--
+
+~ to add new branch -->
+$ git branch branchname
+
+~ to get list og branch -->
+$ git branch
+
+~ to switch from one branch to another -->
+$ git switch branchname
+
+~ to merge changes made in diff branches -->
+$ git merge branchname
+
+~ to show a nice graphical representation of the resulting history -->
+$ gitk
+
+~ to delete branch -->
+$ git branch -d branchname
+
+--collaboration--
+
+~ to make two people work on a same project by sharing code on git -->
+$ git clone path_otherperson myrepo
+
+~ to pull request by another person -->
+$ git pull /home/xyz/myrepo master
+
+~ without merging if wanna see changes -->
+$ git fetch /home/xyz/myrepo master
+
+~ to see having anything worth to pulling -->
+$ git log -p HEAD..FETCH_HEAD
+'HEAD..FETCH_HEAD' means shows data from person1 work(head) to person2 work(fetch_head)
+
+~ to see what other person has done -->
+$ gitk HEAD..FETCH_HEAD
+
+~ to see what both has done -->
+$ gitk HEAD...FETCH_HEAD
+
+~ to interact with the same repository over and over again -->
+$ git remote add xyz /home/xyz/myrepo
+
+~ to see all the changes made by person2 since branched with person1
+person1$ git log -p master..person2/master
+
+~ to show history of commit -->
+$ git show commit_name
+$ git show HEAD  (##shows the tip of the current branch)
+
+~ to give commits names of your own -->
+$ git tag v2.5 commit_name
+
+--reset--
+
+~ reset your current branch and working directory -->
+$ git reset --hard HEAD^
+
+--amend--
+
+~ Fix Last Commit Message -->
+git commit --amend -m "New message"
+
+--rebase-- (moves or combines a sequence of commits to a new base commit)
+
+~ to move your current branch on top of another branch -->
+git checkout current_branchname-branch
+git rebase new_branch
+
+--reflog--(records updates to the tip of branches and HEAD)
+
+~ to manually expire old entries if needed -->
+git reflog expire --expire=3.days refs/heads/main
+git gc --prune=now
+
+( removes reflog entries older than 3 days for the main branch)
+
+--recovery--(means getting back lost commits, branches, or files)
+
+~ to Restore a File -->
+git restore filename.txt
+
+
+
+--SSH--( way to connect securely to remote computers and services, like Git repositories)
+
+~ to Generate a new SSH key pair -->
+ssh-keygen
+
+~  Test SSH connection -->
+ssh -T git@github.com
+
+-- GUI client--(let you use Git with buttons and menus instead of typing commands)

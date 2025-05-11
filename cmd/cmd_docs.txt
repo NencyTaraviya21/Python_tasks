@@ -13,7 +13,7 @@
 
 --> Use of commands:-
     -File management : using 'ls and cp', ls for displaying all files in a folder.
-                                        cp for copying file1 into file2.
+                                          cp for copying file1 into file2.
 
     -System Administration: 'ifconfig' shows the details of the network interface, 'ps' lists running processes.
 
@@ -37,13 +37,52 @@
 
 6. Basic commands---
 
-->'type nul>' = use to create new file [type nul>filename]
-->'echo' = use to show msg in cmd [echo msg]
-->'echo msg >' = use to write msg in any file [echo msg > filename.ext]
-->'tree' = use to get file folders in tree format
-->'start' = use to start any google website
-->'firewall.cpl' = use to open firewall control panel
-->'desk.cpl' = use to open desktop settings panel
-->'tasklist' = use to show tasks running in bg
-->'taskkill /pid pidnumber' = use to stop running task.
-->'mstsc' = to open remote comp. panel
+->'type nul>'  = use to create new file [type nul>filename]
+->'echo'  = use to show msg in cmd [echo msg]
+->'echo msg >'  = use to write msg in any file [echo msg > filename.ext]
+->'tree'  = use to get file folders in tree format
+->'start'  = use to start any google website
+->'firewall.cpl'  = use to open firewall control panel
+->'desk.cpl'  = use to open desktop settings panel
+->'tasklist'  = use to show tasks running in bg
+->'taskkill /pid pidnumber'  = use to stop running task.
+->'mstsc'  = to open remote comp. panel
+->'powercfg'  = It gives idea about the power,energy etc of the comp. [powercfg /?]
+->'start'  = use to start any website from cmd. [start www.websitename.extension ]
+->'clip'  = use to copy directory. [dir | copy]
+->'attrib +h +s +r'  = use to hide files safely. These hidden files can be only unhide using 'attrib -h -s -r'
+->'sdclt'  = use to open backup panel.
+->'cleanmgr'  =cleans dump files.
+->'dxdiag'   = use to open directx diagnostic tool
+->'vol'  = use to see the serial number of any hard disk [vol D:]
+->'hdwwiz'  = use to install driver for device
+->'ftype' = use to show file mapping
+->'assoc'  = use to know that which file using which extension
+->'driverquery'  = shows the list of installed drivers in system
+->'wmic' = use to view startup programs
+->'pathping'  = use to know adv network diagnostics [pathping destination]
+->'regedit' = use to open windows registry editor
+
+many more...
+
+
+
+--MATLAB commands--( environment developed by MathWorks)
+
+~ 'who' --> Lists current variables in use
+    x = 9 
+    who
+
+~ 'lookfor' --> Searches help entries for a keyboard
+
+~ 'pwd' --> Displays current directory
+
+~ 'disp' --> Displays content of array or string
+
+    A = [15]; 
+    B = 'Hello World.'; 
+    disp(A) 
+    disp(B)
+
+
+many more...
